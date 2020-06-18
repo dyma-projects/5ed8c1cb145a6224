@@ -1,6 +1,7 @@
 <h3>Exercice 2 : mise en place d'un décorateur Viewchild </h3>
 <br />
-<input type="text" >
+<!-- utilisation de angular keyup equivalent de onkeyup js, activation de l'evenement puis utilisation de la fctn changeInputValue -->
+<input type="text" #inputValue (keyup)="changeInputValue()"> 
 <br />
 <br />
 <span> valeur de l'input : {{ valeur }}</span>

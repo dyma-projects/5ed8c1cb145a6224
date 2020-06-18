@@ -2,7 +2,10 @@
 <br/>
 <br/>
 <h3>Exercice 1 : mise en place de Output et Input </h3>
-<app-exercice1-enfant></app-exercice1-enfant>
+<!-- tricky la plus importante pour passer les données -->
+<!-- [compteur] est une var dans mon child component, et j'envoie la val de compteur parent -->
+<!-- (eventImit) est envoyer a partir de mon child component tandis que compteurChangeHandler est la fctn parent de recuperer de l'evenement -->
+<app-exercice1-enfant [compteur]="compteur" (eventImit)="compteurChangeHandler($event)"></app-exercice1-enfant>
 <br/>
-<span> compteur : {{ result }}</span>
+<span> compteur : {{ compteur }}</span>
 <hr>
